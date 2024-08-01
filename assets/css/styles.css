@@ -6,7 +6,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling */
 }
 
 header {
@@ -78,11 +79,19 @@ nav {
     color: #fff;
 }
 
+.intro2 {
+    height: 100px;
+    width: 400px;
+    margin-right: 500px;
+    margin-left: 500px;
+
+}
+
 .intro h1 {
     font-size: 36px;
 }
 
-.intro p {
+.intro2 p {
     font-size: 18px;
 }
 
@@ -104,7 +113,10 @@ nav {
 }
 
 /* About Section */
-.about, .projects, .blog, .contact {
+.about,
+.projects,
+.blog,
+.contact {
     padding: 50px 20px;
 }
 
@@ -115,16 +127,20 @@ nav {
     margin-bottom: 20px;
 }
 
-.about h2, .projects h1, .blog h1 {
+.about h2,
+.projects h1,
+.blog h1 {
     margin-top: 20px;
 }
 
 /* Project and Blog Styles */
-.project, .blog-post {
+.project,
+.blog-post {
     margin-bottom: 40px;
 }
 
-.project img, .blog-post img {
+.project img,
+.blog-post img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;

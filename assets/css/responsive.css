@@ -1,0 +1,46 @@
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        background: none;
+        border: none;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}

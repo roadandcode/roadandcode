@@ -189,30 +189,27 @@ nav {
     color: #333; /* Optional: ensures consistent text color */
 }
 
-.about h2,
-.projects h1,
+.about h2{
+    margin-top: 20px;
+}
+
+/*Blog Styles */
+
 .blog h1 {
     margin-top: 20px;
 }
 
-/* Project and Blog Styles */
-.project,
 .blog-post {
     margin-bottom: 40px;
 }
 
-.project img,
 .blog-post img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-.project video {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
+
 
 /* Contact Section */
 .contact {
@@ -349,4 +346,100 @@ footer {
 
 .fade-in {
     animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Project Cards Styling */
+.projects {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.project-link:hover {
+    background-color: #555;
+}
+
+.project-video {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }

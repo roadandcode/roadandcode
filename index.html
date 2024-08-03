@@ -22,7 +22,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <!-- <li><a href="#blog">Blog</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="nav-toggle">&#9776;</button>
@@ -34,7 +34,8 @@
             <div class="intro">
                 <h1>From Concept to Console</h1>
                 <div class="intro2">
-                    <p>A passionate Unity Game Developer creating immersive gaming experiences across various platforms including Android, iOS, Windows, Mac, and Web-GL.</p>
+                    <p>A passionate Unity Game Developer creating immersive gaming experiences across various platforms
+                        including Android, iOS, Windows, Mac, and Web-GL.</p>
                 </div>
                 <a href="#projects" class="cta">Explore My Work</a>
             </div>
@@ -44,127 +45,225 @@
             <hr>
             <h1>About Me</h1>
             <img src="assets/images/avatar.png" alt="Ravi Chaudhary">
-            <p class ="about_p">Hello! I'm Ravi Chaudhary, a dedicated game developer with a strong focus on Unity and C#. With experience in creating 2D, 3D, multiplayer, and slot games, I have a passion for delivering high-quality, engaging gaming experiences. I have worked on a variety of projects, from developing game-related tools and scripts to designing and implementing gameplay mechanics. I am proficient in optimizing game performance and troubleshooting technical issues.</p>
+            <p class="about_p">Hello! I'm Ravi Chaudhary, a dedicated game developer with a strong focus on Unity and
+                C#. With experience in creating 2D, 3D, multiplayer, and slot games, I have a passion for delivering
+                high-quality, engaging gaming experiences. I have worked on a variety of projects, from developing
+                game-related tools and scripts to designing and implementing gameplay mechanics. I am proficient in
+                optimizing game performance and troubleshooting technical issues.</p>
             <br>
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill-card" data-skill="Unity">
-                    <div class="skill-icon">🎮</div>
+                    <div class="skill-icon"><img src="assets/images/Unity.png" alt="Unity"></div>
                     <h3>Unity</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="width: 90%;"></div>
+                        <div class="skill-progress" style="width: 95%;"></div>
                     </div>
                 </div>
                 <div class="skill-card" data-skill="C#">
-                    <div class="skill-icon">💻</div>
+                    <div class="skill-icon"><img src="assets/images/C_Sharp.png" alt="C#"></div>
                     <h3>C#</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="width: 85%;"></div>
+                        <div class="skill-progress" style="width: 95%;"></div>
                     </div>
                 </div>
                 <div class="skill-card" data-skill="Java">
-                    <div class="skill-icon">☕</div>
+                    <div class="skill-icon"><img src="assets/images/Java.png" alt="Unity"></div>
                     <h3>Java</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="width: 80%;"></div>
+                        <div class="skill-progress" style="width: 50%;"></div>
                     </div>
                 </div>
                 <div class="skill-card" data-skill="Game Design">
-                    <div class="skill-icon">🎨</div>
+                    <div class="skill-icon"><img src="assets/images/Game Design.png" alt="Unity"></div>
                     <h3>Game Design</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="width: 75%;"></div>
+                        <div class="skill-progress" style="width: 70%;"></div>
                     </div>
                 </div>
-                <div class="skill-card" data-skill="3D Modeling">
-                    <div class="skill-icon">📐</div>
-                    <h3>3D Modeling</h3>
+                <div class="skill-card" data-skill="GitHub">
+                    <div class="skill-icon"><img src="assets/images/GitHub.png" alt="Unity"></div>
+                    <h3>GitHub</h3>
                     <div class="skill-level">
                         <div class="skill-progress" style="width: 70%;"></div>
                     </div>
                 </div>
             </div>
-            <a href="assets/pdf/resume.pdf" target="_blank" class="cta">Download Resume</a>
+            <a href="assets/pdf/CV_Ravi.pdf" target="_blank" class="cta">Download Resume</a>
         </section>
+
+        <!-- Project section -->
 
         <section id="projects" class="projects">
             <hr>
             <h1>My Projects</h1>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="2D Platformer Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">2D Platformer Game</h2>
+                        <p class="project-description">A fun 2D platformer game with unique levels and characters.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Lead Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/2d-platformer" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="2d-platformer">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/2d-platformer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="assets/images/project1.png" alt="Project 1">
-                <h2>2D Platformer Game</h2>
-                <p>A fun 2D platformer game with unique levels and characters.</p>
-                <ul>
-                    <li><strong>Role:</strong> Lead Developer</li>
-                    <li><strong>Technology Stack:</strong> Unity, C#</li>
-                </ul>
-                <a href="https://github.com/ravichaudhary/2d-platformer" target="_blank" class="cta">View on GitHub</a>
-                <video controls>
-                    <source src="assets/videos/2d-platformer.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="3D Adventure Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">3D Adventure Game</h2>
+                        <p class="project-description">Explore vast worlds in this immersive 3D adventure game.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Game Designer & Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#, Blender</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/3d-adventure" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="3d-adventure">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/3d-adventure.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-            <!-- Project 2 -->
-            <div class="project">
-                <img src="assets/images/project2.png" alt="Project 2">
-                <h2>3D Adventure Game</h2>
-                <p>Explore vast worlds in this immersive 3D adventure game.</p>
-                <ul>
-                    <li><strong>Role:</strong> Game Designer & Developer</li>
-                    <li><strong>Technology Stack:</strong> Unity, C#, Blender</li>
-                </ul>
-                <a href="https://github.com/ravichaudhary/3d-adventure" target="_blank" class="cta">View on GitHub</a>
-                <video controls>
-                    <source src="assets/videos/3d-adventure.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="Multiplayer Slot Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">Multiplayer Slot Game</h2>
+                        <p class="project-description">A multiplayer slot game with real-time interaction and
+                            challenges.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#, JavaScript</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/multiplayer-slot" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="multiplayer-slot">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/multiplayer-slot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-            <!-- Project 3 -->
-            <div class="project">
-                <img src="assets/images/project3.png" alt="Project 3">
-                <h2>Multiplayer Slot Game</h2>
-                <p>A multiplayer slot game with real-time interaction and challenges.</p>
-                <ul>
-                    <li><strong>Role:</strong> Developer</li>
-                    <li><strong>Technology Stack:</strong> Unity, C#, JavaScript</li>
-                </ul>
-                <a href="https://github.com/ravichaudhary/multiplayer-slot" target="_blank" class="cta">View on GitHub</a>
-                <video controls>
-                    <source src="assets/videos/multiplayer-slot.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="Multiplayer Slot Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">Multiplayer Slot Game</h2>
+                        <p class="project-description">A multiplayer slot game with real-time interaction and
+                            challenges.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#, JavaScript</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/multiplayer-slot" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="multiplayer-slot">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/multiplayer-slot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="Multiplayer Slot Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">Multiplayer Slot Game</h2>
+                        <p class="project-description">A multiplayer slot game with real-time interaction and
+                            challenges.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#, JavaScript</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/multiplayer-slot" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="multiplayer-slot">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/multiplayer-slot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="assets/images/Project.png" alt="Multiplayer Slot Game" class="project-image">
+                    <div class="project-info">
+                        <h2 class="project-title">Multiplayer Slot Game</h2>
+                        <p class="project-description">A multiplayer slot game with real-time interaction and
+                            challenges.</p>
+                        <div class="project-details">
+                            <p><strong>Role:</strong> Developer</p>
+                            <p><strong>Technology Stack:</strong> Unity, C#, JavaScript</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ravichaudhary/multiplayer-slot" target="_blank"
+                                class="project-link">View on GitHub</a>
+                            <button class="project-link video-toggle" data-video="multiplayer-slot">Watch Demo</button>
+                        </div>
+                    </div>
+                    <video class="project-video" style="display: none;">
+                        <source src="assets/videos/multiplayer-slot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
             </div>
         </section>
 
+        <!-- Hiding Blog Post for Now 
         <section id="blog" class="blog">
             <hr>
             <h1>Blog</h1>
 
-            <!-- Blog Post 1 -->
+            <!-- Blog Post 1 
             <div class="blog-post">
                 <h2>Development Insights</h2>
                 <p>Explore my thoughts on game development, challenges, and triumphs.</p>
                 <a href="#" class="cta">Read More</a>
             </div>
 
-            <!-- Blog Post 2 -->
+            <!-- Blog Post 2 
             <div class="blog-post">
                 <h2>Unity Game Development Tips</h2>
                 <p>Learn some useful tips and tricks for developing games in Unity.</p>
                 <a href="#" class="cta">Read More</a>
             </div>
 
-            <!-- Blog Post 3 -->
+            <!-- Blog Post 3 
             <div class="blog-post">
                 <h2>Trends in the Gaming Industry</h2>
                 <p>Discuss the latest trends and insights in the gaming industry.</p>
                 <a href="#" class="cta">Read More</a>
             </div>
         </section>
+        -->
 
         <section id="contact" class="contact">
             <hr>

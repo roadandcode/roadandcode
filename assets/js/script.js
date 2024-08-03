@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.toggle('open');
     });
 
+
+    // Skills Cards Section
+
     const skillCards = document.querySelectorAll('.skill-card');
     
     const observer = new IntersectionObserver((entries) => {
@@ -23,6 +26,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    // Project Section
+
+    const videoToggles = document.querySelectorAll('.video-toggle');
+    
+    videoToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const videoId = this.getAttribute('data-video');
+            const videoElement = this.closest('.project-card').querySelector('.project-video');
+            
+            if (videoElement.style.display === 'none') {
+                videoElement.style.display = 'block';
+                this.textContent = 'Hide Demo';
+                videoElement.play();
+            } else {
+                videoElement.style.display = 'none';
+                this.textContent = 'Watch Demo';
+                videoElement.pause();
+            }
+        });
+    });
+
+
 });
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+});
 

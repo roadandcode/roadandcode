@@ -144,7 +144,6 @@ nav {
     text-align: center;
     padding: 20px; /* Optional: adjust padding as needed */
     height: 100vh; /* Full viewport height */
-    background: url('assets/images/BG.png') no-repeat bottom center; /* Background image positioned at the bottom */
     background-size: cover; /* Ensures the image covers the entire container */
     position: relative; /* Ensure that the pseudo-element is positioned relative to this container */
 }

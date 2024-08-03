@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+    navToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
     });
 });

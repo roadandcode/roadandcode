@@ -180,6 +180,14 @@ nav {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+.about_p
+{
+    margin: 0 auto; /* Centers the paragraph */
+    max-width: 80%; /* Limits the width to 80% of the container */
+    text-align: center; /* Ensures the text is centered within the paragraph */
+    line-height: 1.6; /* Optional: improves readability by increasing line height */
+    color: #333; /* Optional: ensures consistent text color */
+}
 
 .about h2,
 .projects h1,

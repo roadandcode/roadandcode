@@ -462,19 +462,22 @@ footer {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 60px;
     justify-content: center;
 }
 
 .project-card {
+
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    
 }
 
 .project-card:hover {
@@ -515,39 +518,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.project-details {
-    font-size: 0.8em;
-    color: #888;
-    margin-bottom: 15px;
-}
 
-.project-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-link {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
-.project-link:hover {
-    background-color: #555;
-}
-
-.project-video {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 5px;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

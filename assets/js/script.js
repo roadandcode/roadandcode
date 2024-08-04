@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.classList.add('visible');
                 } else {
                     // Check if the visibility is less than 20% for not-visible
-                    if (visibilityRatio < 0.5) {
+                    if (visibilityRatio < 0.7) {
                         entry.target.classList.remove('visible');
                     }
                 }

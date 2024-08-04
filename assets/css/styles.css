@@ -276,11 +276,12 @@ h1 span {
     margin-top: 20px;
 }
 
-/* About Section */
+/* ========================
+   About Section Styles
+======================== */
+
 .about,
-.projects,
-.blog,
-.contact {
+.projects{
     padding: 50px 20px;
     text-align: center;
 }
@@ -314,97 +315,12 @@ h1 span {
     color: white;
 }
 
-/*Blog Styles */
-
-.blog h1 {
-    margin-top: 20px;
-}
-
-.blog-post {
-    margin-bottom: 40px;
-}
-
-.blog-post img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
 
 
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin: 50px 0;
-    color: #ffffff;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;
-}
-
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.contact button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #444;
-}
-
-.social-links {
-    margin-top: 30px;
-}
-
-.social-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    width: 100%;
-}
-
-/* Skills cards */
+/* ========================
+   Footer Section Styles
+======================== */
 
 
 .skills-container {
@@ -480,7 +396,12 @@ footer {
     animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Project Cards Styling */
+
+/* ========================
+   Project Section Styles
+======================== */
+
+
 .projects {
     padding: 50px 50px;
 }
@@ -583,4 +504,19 @@ footer {
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* ========================
+   Footer Section Styles
+======================== */
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
 }

@@ -483,6 +483,11 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.59); /* A larger shadow effect */
 }
 
+.project-card.not-visible {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 
 .project-image {

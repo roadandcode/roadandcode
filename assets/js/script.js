@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    
+
+    // Nav links
+
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Skills Cards Section
 
     const skillCards = document.querySelectorAll('.skill-card');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -28,39 +30,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+
+
     // Element in focus on mubile device
-    
+
     // Project Section
 
-    const projects = document.querySelectorAll('.projects');
+    const projects = document.querySelectorAll('.project-card');
 
-    const observerOptions = {
-        root: null, // Use the viewport as the root
-        rootMargin: '0px',
-        threshold: 0.5 // 50% of the element should be visible
-    };
+    // Check if the device is a mobile device
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Add the 'visible' class
-                observer.unobserve(entry.target); // Optionally stop observing once visible
-            }
+    if (isMobile) {
+        const observerOptions = {
+            root: null, // Use the viewport as the root
+            rootMargin: '0px',
+            threshold: Array.from({ length: 101 }, (_, i) => i / 100), // Creating an array [0, 0.01, ..., 1.0]
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                const visibilityRatio = entry.intersectionRatio;
+
+                // Check if the visibility is greater than 50% for visible
+                if (visibilityRatio > 0.9) {
+                    entry.target.classList.add('visible');
+                } else {
+                    // Check if the visibility is less than 20% for not-visible
+                    if (visibilityRatio < 0.5) {
+                        entry.target.classList.remove('visible');
+                    }
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        projects.forEach(card => {
+            observer.observe(card);
         });
-    };
-
-    const projectsObserver = new IntersectionObserver(observerCallback, observerOptions);
-
-    projects.forEach(card => {
-        projectsObserver.observe(card); // Observe each project card
-    });
-
+    }
 
 });
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
 });
 

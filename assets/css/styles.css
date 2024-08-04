@@ -449,7 +449,7 @@ footer {
 
 /* Project Cards Styling */
 .projects {
-    padding: 50px 20px;
+    padding: 50px 50px;
 }
 
 .projects h1 {
@@ -462,8 +462,9 @@ footer {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
     justify-content: center;
+    padding: 20px;
+    gap: 40px;
 }
 
 .project-card {
@@ -473,10 +474,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 300px;
     
 }
 

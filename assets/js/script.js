@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
     // Nav links
-
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
@@ -10,12 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.toggle('open');
     });
 
-
     // Skills Cards Section
-
     const skillCards = document.querySelectorAll('.skill-card');
 
-    const observer = new IntersectionObserver((entries) => {
+    const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('fade-in');
@@ -26,16 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.1 });
 
     skillCards.forEach(card => {
-        observer.observe(card);
+        skillObserver.observe(card);
     });
 
-
-
-
-    // Element in focus on mubile device
-
     // Project Section
-
     const projects = document.querySelectorAll('.project-card');
 
     // Check if the device is a mobile device
@@ -53,29 +43,55 @@ document.addEventListener('DOMContentLoaded', function () {
                 const visibilityRatio = entry.intersectionRatio;
 
                 // Check if the visibility is greater than 50% for visible
-                if (visibilityRatio > 0.9) {
+                if (visibilityRatio = 1) {
                     entry.target.classList.add('visible');
+                    toggleGif(entry.target, true); // Play GIF when visible
                 } else {
                     // Check if the visibility is less than 20% for not-visible
                     if (visibilityRatio < 0.88) {
                         entry.target.classList.remove('visible');
+                        toggleGif(entry.target, false); // Pause GIF when not visible
                     }
                 }
             });
         };
 
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        const projectObserver = new IntersectionObserver(observerCallback, observerOptions);
 
         projects.forEach(card => {
-            observer.observe(card);
+            projectObserver.observe(card);
+        });
+    } else {
+        // Add hover effect for desktop
+        projects.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                toggleGif(card, true); // Play GIF on hover
+            });
+
+            card.addEventListener('mouseleave', () => {
+                toggleGif(card, false); // Pause GIF when not hovered
+            });
         });
     }
 
+    /**
+     * Toggles the GIF play/pause state.
+     * @param {HTMLElement} card - The project card element.
+     * @param {boolean} play - True to play the GIF, false to pause.
+     */
+    function toggleGif(card, play) {
+        const gif = card.querySelector('.gif-img');
+        const staticImg = card.querySelector('.static-img');
+
+        if (gif && staticImg) {
+            if (play) {
+                staticImg.style.display = 'none'; // Hide static image
+                gif.style.display = 'block'; // Show GIF
+            } else {
+                gif.style.display = 'none'; // Hide GIF
+                staticImg.style.display = 'block'; // Show static image
+            }
+        }
+    }
+
 });
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
-});
-

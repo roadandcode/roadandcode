@@ -1,5 +1,6 @@
 :root {
-    --navbar-height: 60px; /* Adjust this value to match your navbar height */
+    --navbar-height: 60px;
+    /* Adjust this value to match your navbar height */
 }
 
 header {
@@ -9,9 +10,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: var(--navbar-height); /* Ensure height matches your navbar */
-    display: flex; /* Use Flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    height: var(--navbar-height);
+    /* Ensure height matches your navbar */
+    display: flex;
+    /* Use Flexbox for alignment */
+    align-items: center;
+    /* Center items vertically */
 }
 
 
@@ -23,17 +27,21 @@ body {
     padding: 0;
     line-height: 1.6;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-    background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling */
+    background-attachment: fixed;
+    /* Ensures the background stays fixed while scrolling */
     box-sizing: border-box;
 }
 
 /* Ensure the main content spans the full height */
 .main-wrapper {
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
+    /* Full viewport height */
     position: relative;
-    padding-bottom: 60px; /* Space for the footer */
-    background: linear-gradient(to bottom, #0a1833,#79879b);
+    padding-bottom: 60px;
+    /* Space for the footer */
+    background: linear-gradient(to bottom, #0a1833, #79879b);
 }
 
 /* Basic styles for sections */
@@ -53,19 +61,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0px 20px; /* Padding on sides */
+    padding: 0px 20px;
+    /* Padding on sides */
     color: #6b98e5;
 }
 
 .logo {
     display: flex;
-    align-items: center; /* Ensure the items are centered vertically */
-    margin-left: 0px; /* Add a small margin from the left */
+    align-items: center;
+    /* Ensure the items are centered vertically */
+    margin-left: 0px;
+    /* Add a small margin from the left */
 }
 
 .logo a {
     display: flex;
-    align-items: center; /* Center align vertically */
+    align-items: center;
+    /* Center align vertically */
     text-decoration: none;
     color: #fff;
     font-size: 24px;
@@ -82,7 +94,8 @@ nav {
 .nav-links {
     list-style-type: none;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .nav-links li {
@@ -111,15 +124,18 @@ nav {
 
 @media (max-width: 800px) {
     .nav-links {
-        display: none; /* Hide links initially */
+        display: none;
+        /* Hide links initially */
         flex-direction: column;
         position: absolute;
-        top: var(--navbar-height); /* Adjust to navbar height */
+        top: var(--navbar-height);
+        /* Adjust to navbar height */
         right: 20px;
         background-color: #676262;
         border-radius: 5px;
         padding: 10px;
-        width: 200px; /* Set a width for the dropdown */
+        width: 200px;
+        /* Set a width for the dropdown */
     }
 
     .nav-links li {
@@ -142,10 +158,14 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px; /* Optional: adjust padding as needed */
-    height: 100vh; /* Full viewport height */
-    background-size: cover; /* Ensures the image covers the entire container */
-    position: relative; /* Ensure that the pseudo-element is positioned relative to this container */
+    padding: 20px;
+    /* Optional: adjust padding as needed */
+    height: 100vh;
+    /* Full viewport height */
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    position: relative;
+    /* Ensure that the pseudo-element is positioned relative to this container */
 }
 
 
@@ -154,8 +174,10 @@ nav {
 
 .intro {
     color: #ffffff;
-    position: relative; /* Ensure this is on top of the overlay */
-    z-index: 2; /* Ensure this is on top of the overlay */
+    position: relative;
+    /* Ensure this is on top of the overlay */
+    z-index: 2;
+    /* Ensure this is on top of the overlay */
 }
 
 /* Ensure the text color contrasts with the background */
@@ -167,7 +189,7 @@ nav {
 .intro p {
     font-size: 20px;
     margin-bottom: 20px;
-   background-color: #1c77a79d;
+    background-color: #1c77a79d;
     color: #ffffff;
 }
 
@@ -201,6 +223,7 @@ h1 span {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -212,6 +235,7 @@ h1 span {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -223,6 +247,7 @@ h1 span {
         opacity: 0;
         transform: translateX(100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -267,20 +292,24 @@ h1 span {
     margin-bottom: 20px;
 }
 
-.about h1
-{
+.about h1 {
     color: #ffffff;
 }
-.about_p
-{
-    margin: 0 auto; /* Centers the paragraph */
-    max-width: 80%; /* Limits the width to 80% of the container */
-    text-align: center; /* Ensures the text is centered within the paragraph */
-    line-height: 1.6; /* Optional: improves readability by increasing line height */
-    color: #ffffff; /* Optional: ensures consistent text color */
+
+.about_p {
+    margin: 0 auto;
+    /* Centers the paragraph */
+    max-width: 80%;
+    /* Limits the width to 80% of the container */
+    text-align: center;
+    /* Ensures the text is centered within the paragraph */
+    line-height: 1.6;
+    /* Optional: improves readability by increasing line height */
+    color: #ffffff;
+    /* Optional: ensures consistent text color */
 }
 
-.about h2{
+.about h2 {
     margin-top: 20px;
     color: white;
 }
@@ -385,7 +414,8 @@ footer {
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
-    max-width: 100% /* Limit the maximum width for larger screens */
+    max-width: 100%
+        /* Limit the maximum width for larger screens */
 }
 
 .skill-card {
@@ -406,16 +436,18 @@ footer {
 }
 
 
-.skill-card img{
+.skill-card img {
     width: 80px;
     height: 80px;
     color: #333;
-    transition: font-size 0.3s ease; /* Smooth transition for icon resizing */
+    transition: font-size 0.3s ease;
+    /* Smooth transition for icon resizing */
 }
-.skill-card h3{
-   text-align: center;
-   font-size:100%;
-   margin-top: auto;
+
+.skill-card h3 {
+    text-align: center;
+    font-size: 100%;
+    margin-top: auto;
 }
 
 .skill-level {
@@ -437,6 +469,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -474,16 +507,52 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+    position: relative;
+    height: 300px;
+    max-width: 350px;
+
+}
+
+.project-image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.static-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.gif-img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-card:hover .static-img {
+    display: none;
+}
+
+.project-card:hover .gif-img {
+    /* Show the GIF image */
+    opacity: 1;
+    position: relative;
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.723); /* A larger shadow effect */
+    transform: scale(1.05);
+    /* Slightly increase the size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
 .project-card.visible {
-    transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.723); /* A larger shadow effect */
+    transform: scale(1.05);
+    /* Slightly increase the size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.723);
+    /* A larger shadow effect */
 }
 
 .project-card.not-visible {
@@ -493,19 +562,12 @@ footer {
 
 
 
-.project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
 
-.project-info {
-    padding: 20px;
-}
+.project-info {}
 
 .project-title {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     color: #333;
 }
 

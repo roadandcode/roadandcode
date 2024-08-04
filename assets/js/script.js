@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const visibilityRatio = entry.intersectionRatio;
 
                 // Check if the visibility is greater than 50% for visible
-                if (visibilityRatio = 1) {
+                if (visibilityRatio > 0.99) {
                     entry.target.classList.add('visible');
                     toggleGif(entry.target, true); // Play GIF when visible
                 } else {

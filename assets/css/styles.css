@@ -566,13 +566,12 @@ footer {
 .project-info {}
 
 .project-title {
-    font-size: 1.5em;
-    padding-bottom: 10px;
+    font-size: 1em;
     color: #333;
 }
 
 .project-description {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #666;
     margin-bottom: 15px;
 }

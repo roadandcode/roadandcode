@@ -472,15 +472,18 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .project-card:hover {
     transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.59); /* A larger shadow effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.723); /* A larger shadow effect */
 }
 .project-card.visible {
     transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.59); /* A larger shadow effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.723); /* A larger shadow effect */
 }
 
 .project-card.not-visible {

@@ -206,7 +206,7 @@ nav {
 /* Ensure the text color contrasts with the background */
 .intro h1 {
     color: #ffffff;
-    font-size: 100px;
+    font-size: 80px;
     margin-bottom: 20px;
     /* Add a white text outline */
     text-shadow:
@@ -222,27 +222,12 @@ nav {
     filter: blur(0.6px);
 }
 
-@keyframes wave {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    75% {
-        transform: translateY(-5px);
-    }
-}
 
 .intro p {
     color: #ffffff;
     font-size: 30px;
     margin-bottom: 20px;
     display: inline-block;
-    animation: wave 3s ease-in-out infinite;
     text-shadow: 
         -1px -1px 0 #000000,
         1px -1px 0 #000000,

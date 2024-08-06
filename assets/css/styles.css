@@ -205,34 +205,20 @@ nav {
 
 /* Ensure the text color contrasts with the background */
 .intro h1 {
+    font-family: 'Merriweather';
     color: #ffffff;
     font-size: 80px;
     margin-bottom: 20px;
-    /* Add a white text outline */
-    text-shadow:
-        -2px -2px 0 #000000,
-        /* Top left shadow */
-        2px -2px 0 #000000,
-        /* Top right shadow */
-        -2px 2px 0 #000000,
-        /* Bottom left shadow */
-        2px 2px 0 #000000;
-    /* Bottom right shadow */
 
-    filter: blur(0.6px);
+
 }
 
 
 .intro p {
-    color: #ffffff;
+    color: #3e210f;
     font-size: 30px;
     margin-bottom: 20px;
     display: inline-block;
-    text-shadow: 
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
 }
 
 
